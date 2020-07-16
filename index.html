@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Input</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dist/bundle.css" />
+    <script src="dist/bundle.js"></script>
+  </head>
+  <body>
+    <form id="form" class="formContainer">
+      <div class="formContent">
+        <div class="formHeader">Share <span>Board name</span> with others</div>
+        <div id="emails-input" class="emailInput"></div>
+      </div>
+      <div class="buttonGroup">
+        <button type="button" onclick="addRandomEmail()">Add emails</button>
+        <button type="button" onclick="getEmailsCount()">
+          Get emails count
+        </button>
+      </div>
+    </form>
+    <form id="form2">
+      <div id="emails-input2"></div>
+    </form>
+    <script>
+      var data = [
+        "owabe0@liveinternet.ru",
+        "mchipman1@mysql.com",
+        "tlong7@taobao.com",
+        "aclaris8@canalblog.com",
+      ];
+      var inputContainerNode = document.querySelector("#emails-input");
+      var emailsInput = EmailsInput(inputContainerNode, data);
+      //   var inputContainerNode2 = document.querySelector("#emails-input2");
+      //   var emailsInput2 = EmailsInput(inputContainerNode2, data);
+
+      function addRandomEmail() {
+        emailsInput.addEmail(randomEmail());
+      }
+
+      function getEmailsCount() {
+        alert(emailsInput.validCount + " valid email(s)");
+      }
+
+      function randomEmail() {
+        var chars = "abcdefghijklmnopqrstuvwxyz1234567890";
+        var name = "";
+        var range = Math.random() * (20 - 3) + 3;
+        for (var i = 0; i < range; i++) {
+          name += chars[Math.floor(Math.random() * chars.length)];
+        }
+        return name + "@test.com";
+      }
+    </script>
+  </body>
+</html>

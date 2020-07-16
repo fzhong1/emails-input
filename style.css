@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+:root {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+}
+.formContainer {
+  margin: auto;
+  margin-top: 10%;
+  width: 50%;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 540px;
+  height: 300px;
+}
+
+.formContent {
+  background: #f8f8f7;
+  border-radius: 8px 8px 0px 0px;
+  height: 204px;
+  width: 100%;
+}
+
+.formHeader {
+  padding-top: 32px;
+  margin: 0 50px 0 50px;
+  margin: 32px 50px 0 50px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: normal;
+  color: #050038;
+}
+
+.formHeader > span {
+  font-weight: bold;
+}
+
+button {
+  background: #4262ff;
+  border-radius: 6px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 16px;
+  color: #ffffff;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+  border-style: solid;
+}
+
+.buttonGroup {
+  display: flex;
+  margin-left: 34px;
+  margin-top: 24px;
+}
+
+.emailInput {
+  width: 440px;
+  height: 96px;
+  margin-left: 50px;
+  display: block;
+  margin-top: 24px;
+}
