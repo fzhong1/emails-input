@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Email Input</title>
+    <title>Emails Input</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="dist/bundle.css" />
-    <script src="dist/bundle.js"></script>
+    <link rel="stylesheet" href="dist/emails-input.css" />
+    <script src="dist/emails-input.js"></script>
   </head>
   <body>
     <form id="form" class="formContainer">
@@ -20,9 +20,6 @@
         </button>
       </div>
     </form>
-    <form id="form2">
-      <div id="emails-input2"></div>
-    </form>
     <script>
       var data = [
         "owabe0@liveinternet.ru",
@@ -32,8 +29,6 @@
       ];
       var inputContainerNode = document.querySelector("#emails-input");
       var emailsInput = EmailsInput(inputContainerNode, data);
-      //   var inputContainerNode2 = document.querySelector("#emails-input2");
-      //   var emailsInput2 = EmailsInput(inputContainerNode2, data);
 
       function addRandomEmail() {
         emailsInput.addEmail(randomEmail());

@@ -6,7 +6,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "emails-input.js",
   },
 
   mode: "development",
@@ -60,7 +60,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "bundle.css",
+      filename: "emails-input.css",
     }),
   ],
 };
