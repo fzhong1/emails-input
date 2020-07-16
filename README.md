@@ -35,5 +35,5 @@ Include the following files in your project:
   emailsInput.addEamil('john@gmail.com')
 ```
 
-#License
+# License
 ISC
