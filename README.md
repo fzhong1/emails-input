@@ -3,7 +3,7 @@ This repository constains an Input field for emails JS library, and it can be us
 
 See [demo](https://fzhong1.github.io/emails-input/) for an example of using this library.
 
-#Set it up
+# Set it up
 Include the following files in your project:
 ```html
     <link rel="stylesheet" href="dist/emails-input.css" />
